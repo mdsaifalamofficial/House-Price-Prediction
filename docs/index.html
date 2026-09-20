@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        House Price Predictor
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h1>
+                🏠 House Price Predictor
+            </h1>
+
+            <p class="subtitle">
+                Predict an estimated house price
+                using Machine Learning.
+            </p>
+
+
+            <form id="predictionForm">
+
+                <!-- Location -->
+
+                <label for="location">
+                    Location
+                </label>
+
+                <select id="location">
+
+                    <option value="">
+                        Select Location
+                    </option>
+
+                    <option value="Patna">
+                        Patna
+                    </option>
+
+                    <option value="Delhi">
+                        Delhi
+                    </option>
+
+                    <option value="Mumbai">
+                        Mumbai
+                    </option>
+
+                    <option value="Kolkata">
+                        Kolkata
+                    </option>
+
+                    <option value="Ranchi">
+                        Ranchi
+                    </option>
+
+                </select>
+
+
+                <!-- Size -->
+
+                <label for="size">
+                    House Size (sqft)
+                </label>
+
+                <input
+                    type="number"
+                    id="size"
+                    placeholder="Example: 1800"
+                    min="1"
+                    required
+                >
+
+
+                <!-- Rooms -->
+
+                <label for="rooms">
+                    Number of Rooms
+                </label>
+
+                <input
+                    type="number"
+                    id="rooms"
+                    placeholder="Example: 3"
+                    min="1"
+                    required
+                >
+
+
+                <!-- Age -->
+
+                <label for="age">
+                    House Age (years)
+                </label>
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Example: 5"
+                    min="0"
+                    required
+                >
+
+
+                <!-- Button -->
+
+                <button
+                    type="submit"
+                >
+                    Predict House Price
+                </button>
+
+            </form>
+
+
+            <!-- Result -->
+
+            <div
+                id="result"
+                class="result hidden"
+            >
+
+                <p>
+                    Estimated House Price
+                </p>
+
+                <h2 id="price">
+                    ₹0
+                </h2>
+
+            </div>
+
+
+            <!-- Error -->
+
+            <div
+                id="error"
+                class="error hidden"
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
