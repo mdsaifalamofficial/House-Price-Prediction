@@ -87,7 +87,7 @@ form.addEventListener(
 
             const response =
                 await fetch(
-                    "https://house-price-prediction-api-kura.onrender.com/",
+                    "https://house-price-prediction-api-kura.onrender.com/predict",
                     {
 
                         method: "POST",
